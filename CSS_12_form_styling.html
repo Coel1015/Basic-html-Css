@@ -16,8 +16,9 @@
             -Reset margin and padding
            */
             box-sizing: border-box;
-            margin: auto;
-            padding: unset;
+            margin: 0;
+            padding: 0;
+
 
 
         }
@@ -27,6 +28,8 @@
               -Background color is #344a72
             */
             background: #344a72;
+            font-family: "Raleway";
+
         }
 
         a {
@@ -42,11 +45,14 @@
             -I would also set a "max-width" for responsiveness
             -May want to add some padding
             */
-            width: max-content;
+            max-width: max-content;
             margin-left: auto;
             margin-right: auto;
             padding: 100px;
-            line-height: 70px;
+            line-height: 50px;
+
+
+
 
         }
 
@@ -56,6 +62,9 @@
             */
             background: white;
             border-radius: 10px;
+            padding:  25px;
+            height: 100%;
+
 
         }
 
@@ -65,6 +74,8 @@
               May want to center these
             */
             text-align: center;
+
+
         }
 
         .form-wrap .form-group {
@@ -73,7 +84,11 @@
             */
             display:flex;
             flex-direction: column;
-            margin-left: 20px;
+            text-align:left;
+            padding-bottom: 10px;
+
+
+
 
 
 
@@ -85,8 +100,7 @@
               Label should be turned into a block element
             */
             display: block;
-            box-sizing: border-box;
-            width: 100%;
+            line-height: 2em;
 
 
 
@@ -103,6 +117,9 @@
 
 
 
+
+
+
         }
 
         .form-wrap button {
@@ -113,6 +130,9 @@
             background-color: #49c1a2;
             display: block;
             width: 90%;
+            color: white;
+            border-radius: 8px;
+
 
 
         }
@@ -122,6 +142,8 @@
               Hover background color for button is #37a08e
             */
             color: #37a08e;
+
+
         }
 
         .form-wrap .bottom-text {
@@ -130,6 +152,8 @@
             */
             text-align:justify-all;
 
+
+
         }
 
         footer {
@@ -137,6 +161,7 @@
             Should be centered
            */
             text-align: center;
+
         }
 
         footer a {
@@ -144,7 +169,29 @@
               Footer link color is #49c1a2
             */
             color:#49c1a2 ;
+
         }
+
+        footer p{
+            color: white;
+
+
+        }
+
+        .form-wrap form .bottom-text{
+            width: 60%;
+            line-height: 27px;
+            margin-top: 10px;
+
+        }
+
+        input{
+            border: lightgray 1px solid;
+        }
+
+
+
+
     </style>
 </head>
 <body>
@@ -173,6 +220,7 @@
                 <label for="password2">Confirm Password</label>
                 <input type="password" name="pasword2" id="password2" />
             </div>
+
             <button type="submit" class="btn">Sign Up</button>
             <p class="bottom-text">
                 By clicking the Sign Up button, you agree to our
